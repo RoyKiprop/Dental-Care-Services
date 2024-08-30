@@ -16,18 +16,18 @@ import FooterContact from "./FooterContacts";
 
 function Footer() {
   return (
-    <footer className="bg-[#a6b0a1] text-white font-medium py-20 px-8">
-      <div className="mx-20">
+    <footer className="bg-[#a6b0a1] text-white font-medium py-20">
+      <div className="mx-5 md:mx-16 ">
         <div>
-          <img src={ToothLogo} alt="Tooth Logo" className="h-28 mb-2" />
+          <img src={ToothLogo} alt="Tooth Logo" className="h-28 mb-5 md:mb-2" />
         </div>
-        <div className="max-w-8xl grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className=" grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           <div>
             <h2 className="text-2xl">
               <b>Kieferorthopädie</b> Remagen Sinzig
             </h2>
-            <p className="mt-4">Dr. Franziska Kroll · Dr. Miriam Vieweg</p>
-            <ul className="mt-4 space-y-2">
+            <p className="mt-8 md:mt-4">Dr. Franziska Kroll · Dr. Miriam Vieweg</p>
+            <ul className="mt-8 md:mt-4 space-y-2">
               <FooterContact
                 Icon={FaMapMarkerAlt}
                 text="Karmeliterstraße 11 · 53424 Remagen"
@@ -39,8 +39,8 @@ function Footer() {
                 text="praxis@kfo-remagen-sinzig.de"
               />
             </ul>
-            <p className="mt-4 text-xl">www.kfo-remagen-sinzig.de</p>
-            <p className="mt-4">Folgen Sie uns auch unter:</p>
+            <p className="mt-8 md:mt-4 text-xl">www.kfo-remagen-sinzig.de</p>
+            <p className="mt-8 md:mt-4">Folgen Sie uns auch unter:</p>
             <div className="flex space-x-4 mt-2">
               <Link
                 to="/facebook"
@@ -76,7 +76,7 @@ function Footer() {
                 )}
               </ul>
             </div>
-            <div className="mt-5">
+            <div className="mt-8 md:mt-5">
               <Button variant="primary">Jetzt Termin online vereinbaren!</Button>
             </div>
           </div>
